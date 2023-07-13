@@ -1,0 +1,3 @@
+[submodule "trick"]
+	path = trick
+	url = https://github.com/nasa/trick
