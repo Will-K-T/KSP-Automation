@@ -1,0 +1,5 @@
+log_frame_userjobs_main byte_order is little_endian
+log_frame_userjobs_main	double	     s	sys.exec.out.time
+log_frame_userjobs_main	long_long	     s	JOB_dyn.rocket.state_deriv.21.02(derivative)
+log_frame_userjobs_main	long_long	     s	JOB_dyn.rocket.state_integ.21.03(integration)
+log_frame_userjobs_main	long_long	     s	JOB_dyn.rocket.impact.21.05(dynamic_event)

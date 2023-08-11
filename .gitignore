@@ -1,0 +1,10 @@
+venv/
+build/
+.vscode/
+*.swp
+*.log
+.trick/
+S_main_*
+S_source.hh
+trick.zip
+S_sie.resource

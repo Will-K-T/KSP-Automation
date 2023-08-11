@@ -1,0 +1,16 @@
+|L   0|2023/08/08,18:08:42|Will-T-PC| |T 0|0.100000| 
+     REALTIME SHUTDOWN STATS:
+            ACTUAL INIT TIME:        0.440
+         ACTUAL ELAPSED TIME:        0.455
+|L   0|2023/08/08,18:08:44|Will-T-PC| |T 0|0.100000| 
+SIMULATION TERMINATED IN
+  PROCESS: 0
+  ROUTINE: Executive_loop_single_thread.cpp:85
+  DIAGNOSTIC: Sim control Shutdown
+
+       SIMULATION START TIME:        0.000
+        SIMULATION STOP TIME:        0.100
+     SIMULATION ELAPSED TIME:        0.100
+        ACTUAL CPU TIME USED:        0.197
+       SIMULATION / CPU TIME:        0.508
+     INITIALIZATION CPU TIME:        0.187

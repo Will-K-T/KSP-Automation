@@ -1,0 +1,30 @@
+/************************************************************
+PURPOSE:
+    ( Simulate a rocket during atmospheric flight. )
+LIBRARY DEPENDENCIES:
+    ((rocket/src/rocket.cpp)
+     (astronomical_body/src/atmosphere.c))
+*************************************************************/
+#include "sim_objects/default_trick_sys.sm"
+##include "rocket/include/rocket.hh"
+
+class RocketSimObject : public Trick::SimObject {
+    public:
+    Rocket rocket;
+
+    RocketSimObject() {
+        ("default_data")            rocket.default_data();
+        ("initialization")          rocket.state_init();
+        ("derivative")              rocket.state_deriv();
+        ("integration") trick_ret = rocket.state_integ();
+        ("shutdown")                rocket.shutdown();
+        ("dynamic_event")           rocket.impact();
+    }
+};
+
+RocketSimObject dyn;
+IntegLoop dyn_integloop(0.1) dyn;
+
+void create_connections() {
+    dyn_integloop.getIntegrator(Runge_Kutta_4, 4);
+}

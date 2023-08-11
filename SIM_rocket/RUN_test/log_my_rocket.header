@@ -1,0 +1,5 @@
+log_my_rocket byte_order is little_endian
+log_my_rocket	double	     s	sys.exec.out.time
+log_my_rocket	double	     1	dyn.rocket.pos[0]
+log_my_rocket	double	     1	dyn.rocket.pos[1]
+log_my_rocket	double	     1	dyn.rocket.pos[2]
