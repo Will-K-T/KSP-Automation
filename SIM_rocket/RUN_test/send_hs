@@ -1,7 +1,0 @@
-|L   1|2023/08/11,15:38:59|Will-T-PC| |T 0|0.000000| Freeze ON. Simulation time holding at 0.000000 seconds.
-|L   1|2023/08/11,15:39:05|Will-T-PC| |T 0|0.000000| Freeze OFF.
-|L   1|2023/08/11,15:39:35|Will-T-PC| |T 0|1169.300000| Freeze ON. Simulation time holding at 1169.300000 seconds.
-|L   0|2023/08/11,15:40:17|Will-T-PC| |T 0|1169.300000| 
-     REALTIME SHUTDOWN STATS:
-            ACTUAL INIT TIME:        0.646
-         ACTUAL ELAPSED TIME:       78.794

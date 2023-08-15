@@ -52,7 +52,7 @@ int Rocket::state_init() {
 }
 
 int Rocket::state_deriv() {
-    std::cout << "deriv start" << std::endl;
+    //std::cout << "deriv start" << std::endl;
     acc[0] = 0.0;
     acc[1] = 0.0;
     acc[2] = 0.0;
@@ -60,12 +60,12 @@ int Rocket::state_deriv() {
     double curr_mass = calc_curr_mass();
     calc_curr_gravity_force();
 
-    std::cout << "deriv end" << std::endl;
+    //std::cout << "deriv end" << std::endl;
     return 0;
 }
 
 int Rocket::state_integ() {
-    std::cout << "integ start" << std::endl;
+    //std::cout << "integ start" << std::endl;
     int integration_step;
 
     load_state (&pos[0],
@@ -88,7 +88,7 @@ int Rocket::state_integ() {
                  &vel[1],
                  (double*)0);
 
-    std::cout << "integ end" << std::endl;
+    //std::cout << "integ end" << std::endl;
     return(integration_step);
 }
 
