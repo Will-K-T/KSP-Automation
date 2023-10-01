@@ -19,7 +19,8 @@ dyn.rocket.vel[0] = 10000
 #==================================
 # Start the variable server client.
 #==================================
-varServerPort = trick.var_server_get_port();
+varServerPort = 34059
+trick.var_server_set_port(varServerPort)
 RocketDisplay_path = "models/graphics/RocketDisplay.py"
 if (os.path.isfile(RocketDisplay_path)):
     RocketDisplay_cmd = RocketDisplay_path + " " + str(varServerPort) + " &"
