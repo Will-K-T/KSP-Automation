@@ -1,0 +1,3 @@
+[submodule "Rocket-Sim-Graphics"]
+	path = Rocket-Sim-Graphics
+	url = https://github.com/Will-K-T/Rocket-Sim-Graphics.git
