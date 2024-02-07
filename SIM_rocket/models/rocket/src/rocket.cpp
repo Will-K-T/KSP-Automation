@@ -34,8 +34,6 @@ void scalarVectorMult(double vec[3], double scalar, double result[3]) {
     result[2] = vec[2] * scalar;
 }
 
-
-
 int Rocket::default_data() {
     acc[0] = acc[1] = acc[2] = 0.0;
     vel[0] = vel[1] = vel[2] = 0.0;

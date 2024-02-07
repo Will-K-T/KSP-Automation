@@ -11,6 +11,8 @@ const double AstroBody::G = 6.674E-11;
 
 /* ------------------------------------ Class Constructors --------------------------------- */
 
+AstroBody::AstroBody() {}
+
 AstroBody::AstroBody(double r, double m, double w):
     radius(r), radiusSquared(r*r), mass(m), gravitationalParam(G * m), rotationalVel(w) {}
 
@@ -26,6 +28,24 @@ AstroBody& AstroBody::operator=(const AstroBody& other)
 }
 
 /* ------------------------------------ Class Functions ------------------------------------ */
+
+/* ------------------------------------ Trick Functions ------------------------------------ */
+
+int AstroBody::default_data()
+{
+    radius = 6366707.0195;
+    radiusSquared = radius * radius;
+    mass = 5.97219E24;
+    gravitationalParam = 3.986004418E14;
+    rotationalVel = 460;
+
+    return 0;
+}
+
+int AstroBody::state_init()
+{
+    return 0;
+}
 
 /** 
  * @brief Calculates the acceleration of gravity acting on the object

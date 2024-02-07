@@ -7,14 +7,18 @@ LIBRARY DEPENDENCIES:
 *************************************************************/
 #include "sim_objects/default_trick_sys.sm"
 ##include "rocket/include/rocket.hh"
+##include "astro_body/include/astroBody.hh"
 
 class RocketSimObject : public Trick::SimObject {
     public:
     Rocket rocket;
+    AstroBody body;
 
     RocketSimObject() {
         ("default_data")            rocket.default_data();
         ("initialization")          rocket.state_init();
+        ("default_data")            body.default_data();
+        ("initialization")          body.state_init();
         ("derivative")              rocket.state_deriv();
         ("integration") trick_ret = rocket.state_integ();
         ("shutdown")                rocket.shutdown();
